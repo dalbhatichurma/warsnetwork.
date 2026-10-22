@@ -1,0 +1,23 @@
+name: WarNetworkAccountLink
+version: 1.0.0
+main: fun.warnetwork.accountlink.WarNetworkAccountLinkPlugin
+api-version: '1.21'
+authors: [WarNetwork]
+description: Link a verified Minecraft identity to a Discord account and publish player statistics.
+softdepend: [LuckPerms, Vault, floodgate]
+commands:
+  linkaccount:
+    description: Link your Minecraft account to your Discord account.
+    usage: /linkaccount [code|status]
+    permission: warnetwork.link
+  unlinkaccount:
+    description: Unlink your Minecraft account from Discord.
+    usage: /unlinkaccount [confirm]
+    permission: warnetwork.unlink
+permissions:
+  warnetwork.link:
+    description: Link and inspect your own Minecraft account.
+    default: true
+  warnetwork.unlink:
+    description: Confirm unlinking your own Minecraft account.
+    default: true

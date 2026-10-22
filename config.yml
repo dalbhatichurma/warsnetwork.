@@ -1,0 +1,17 @@
+api:
+  # Use the HTTPS origin where this site's Node server is running.
+  base-url: "https://replace-with-your-website-domain"
+  # Set this to the same private value as WN_PLUGIN_API_TOKEN on the website server.
+  plugin-token: "CHANGE_ME_TO_A_LONG_RANDOM_SECRET"
+  allow-insecure-http-for-local-testing: false
+website-url: "https://replace-with-your-website-domain"
+link-code:
+  confirm-expiry-seconds: 60
+sync:
+  enabled: true
+  interval-seconds: 300
+  # Rank is read from LuckPerms when it is installed; otherwise Member is sent.
+  luckperms-rank: true
+  # Balance is read from Vault if available. Coins remain null unless your network maps them separately.
+  vault-balance: true
+  floodgate-bedrock-detection: true

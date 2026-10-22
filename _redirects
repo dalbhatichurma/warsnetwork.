@@ -1,0 +1,3 @@
+# Netlify: send /api/* to your Node API host (fill in the real URL, remove the leading #), then keep the last line.
+# /api/*  https://YOUR-API-HOST.onrender.com/api/:splat  200
+/*  /index.html  200
